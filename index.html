@@ -1,114 +1,181 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ladou Ramasse Toutou</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fdfdfd;
-      color: #333;
-    }
-    header {
-      background-color: #3c6e71;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-    }
-    header img {
-      height: 100px;
-    }
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #284b63;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-    }
-    table, th, td {
-      border: 1px solid #ccc;
-    }
-    th, td {
-      padding: 10px;
-      text-align: center;
-    }
-    footer {
-      background-color: #3c6e71;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-      margin-top: 30px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Ladouceur - Ramassage de Crottes</title>
+    <style>
+        /* Global settings */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #2d3e50;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+        }
+
+        header .logo {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 0;
+            background-color: #fff;
+            margin: 20px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            text-align: center;
+        }
+
+        /* Tarifs Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #f4f4f4;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo Ladou Ramasse Toutou">
-    <h1>Ladou Ramasse Toutou</h1>
-    <p>Service de ramassage de crottes à domicile</p>
-  </header>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Logo Benjamin Ladouceur" class="logo">
+            <h1>Benjamin Ladouceur - Ramassage de Crottes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Nos Services</a></li>
+                    <li><a href="#tarifs">Nos Tarifs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <div class="container">
-    <h2>Tarifs</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Nombre de chiens</th>
-          <th>Fréquence</th>
-          <th>Tarif par semaine</th>
-          <th>Tarif mensuel</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>1 fois / semaine</td>
-          <td>15 $</td>
-          <td>55 $</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>2 fois / semaine</td>
-          <td>25 $</td>
-          <td>90 $</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>1 fois / semaine</td>
-          <td>20 $</td>
-          <td>75 $</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>2 fois / semaine</td>
-          <td>30 $</td>
-          <td>110 $</td>
-        </tr>
-        <tr>
-          <td>3 ou plus</td>
-          <td>Sur demande</td>
-          <td colspan="2">Contactez-nous pour un devis personnalisé</td>
-        </tr>
-      </tbody>
-    </table>
+    <section id="accueil">
+        <div class="container">
+            <h2>Votre solution pour un jardin propre et sans tracas</h2>
+            <p>Nous offrons des services de ramassage de crottes pour vos chiens à des prix abordables et flexibles. Notre mission : vous aider à garder votre espace extérieur impeccable !</p>
+        </div>
+    </section>
 
-    <h2>Contact</h2>
-    <p><strong>Nom :</strong> Benjamin Ladouceur</p>
-    <p><strong>Téléphone :</strong> 581-761-1693</p>
-    <p><strong>Email :</strong> <a href="mailto:benjamin.ladouceur@hotmail.com">benjamin.ladouceur@hotmail.com</a></p>
-  </div>
+    <section id="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <p>Nous proposons différents forfaits pour répondre à vos besoins, que vous ayez un chien ou plusieurs. Tous nos services sont réalisés avec soin et professionnalisme.</p>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Ladou Ramasse Toutou. Tous droits réservés.</p>
-  </footer>
+    <section id="tarifs">
+        <div class="container">
+            <h2>Nos Tarifs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre de Chiens</th>
+                        <th>Prix par Semaine</th>
+                        <th>Prix par Mois</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 Chien</td>
+                        <td>15$</td>
+                        <td>50$</td>
+                    </tr>
+                    <tr>
+                        <td>2 Chiens</td>
+                        <td>25$</td>
+                        <td>85$</td>
+                    </tr>
+                    <tr>
+                        <td>3 Chiens</td>
+                        <td>35$</td>
+                        <td>120$</td>
+                    </tr>
+                    <tr>
+                        <td>Plus de 3 Chiens</td>
+                        <td>Sur Demande</td>
+                        <td>Sur Demande</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Contactez-nous pour un devis personnalisé en fonction du nombre de chiens et de la fréquence de service que vous souhaitez.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <p>Pour plus d'informations ou pour prendre rendez-vous, n'hésitez pas à nous contacter !</p>
+            <p><strong>Benjamin Ladouceur</strong></p>
+            <p><strong>Téléphone :</strong> 581-761-1693</p>
+            <p><strong>Email :</strong> <a href="mailto:benjamin.ladouceur@hotmail.com">benjamin.ladouceur@hotmail.com</a></p>
+            <p><strong>Adresse :</strong> (Votre adresse ici)</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Benjamin Ladouceur - Tous droits réservés</p>
+        </div>
+    </footer>
 </body>
 </html>
